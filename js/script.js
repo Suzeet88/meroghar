@@ -180,26 +180,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// popup 
-  // Show the modal with a message
-  function showModal(message, redirect = null) {
-    document.getElementById('popupMessage').innerText = message;
-    document.getElementById('popupModal').style.display = 'block';
-    document.getElementById('modalBackdrop').style.display = 'block';
 
-    // Redirect after a short delay if a redirect URL is provided
-    if (redirect) {
-        setTimeout(() => {
-            window.location.href = redirect;
-        }, 2000); // 2 seconds delay
-    }
-}
-
-// Close the modal
-function closeModal() {
-    document.getElementById('popupModal').style.display = 'none';
-    document.getElementById('modalBackdrop').style.display = 'none';
-}
 
 
 
